@@ -161,5 +161,5 @@ if __name__ == '__main__':
         print(f'Epoch {epoch+1}/{epochs}, Loss: {avg_loss:.4f}, Val Acc: {acc:.4f}')
         if acc > best_acc:
             best_acc = acc
-            torch.save(model.state_dict(), 'best_model.pth')
+            torch.save(model.state_dict(), 'best_model_ECS50.pth')
     print(f'Best validation accuracy: {best_acc:.4f}')
